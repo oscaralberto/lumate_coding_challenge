@@ -1,0 +1,12 @@
+<p>
+This is my results page!!
+</p>
+{% if latest_guests %}
+  <ul>
+  {% for Entry in latest_guests %}
+    <li>{{ Entry.name }} {{Entry.surname}} signed on {{Entry.date}}</li>
+  {% endfor %}
+  </ul>
+{% else %}
+<p>No one has signed my guestbook yet!</p>
+{% endif %}

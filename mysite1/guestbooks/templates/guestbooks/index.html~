@@ -1,0 +1,24 @@
+<p>Hi! My name is Oscar Alvarez. I go to MST and <br>
+I have never used Django before!<br><br>
+Please sign my guest book!</p>
+<form method = "POST">
+{{form.as_ul}}
+{% csrf_token %}
+<input type = "submit" value = "Submit"/>
+</form>
+<!--<form method="GET" action = "/guestbooks/results/">
+First Name: <input type="text" name="first"><br>
+Last Name: <input type="text" name="last"><br>
+<input type="submit" value="Submit" />
+</form>
+{% if latest_guest_list %}
+  <ul>
+  {% for Entry in latest_guest_list %}
+    <li>{{ Entry.name }}</li>
+  {% endfor %}
+  </ul>
+{% else %}
+
+<p>No Guests have signed yet.</p>
+{% endif %}-->
+

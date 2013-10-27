@@ -1,0 +1,9 @@
+<p>Hi! My name is Oscar Alvarez. I go to MST and <br>
+I have never used Django before!<br><br>
+Please sign my guest book!</p>
+<form method = "POST">
+{{form.as_ul}}
+{% csrf_token %}
+<input type = "submit" value = "Submit"/>
+</form>
+
